@@ -1,25 +1,33 @@
-import React from "react";
-import { Link, Outlet } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { Routes, Route } from "react-router-dom";
+import Portfolio from "./pages/Portfolio";
 
 const App: React.FC = () => {
+  const [darkMode, setDarkMode] = useState(true);
+
+  useEffect(() => {
+    if (darkMode) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  }, [darkMode]);
+
+  const toggleDarkMode = () => {
+    setDarkMode((prevMode) => !prevMode);
+  };
+
   return (
-    <div>
-      <header>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/about">About</Link>
-            </li>
-            {/* Add more links to other pages as needed */}
-          </ul>
-        </nav>
-      </header>
+    <div className="bg-zinc-100 dark:bg-zinc-900 transition-colors duration-200">
       <main>
-        {/* This is where the routed content will be rendered */}
-        <Outlet />
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <Portfolio darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+            }
+          />
+        </Routes>
       </main>
     </div>
   );
