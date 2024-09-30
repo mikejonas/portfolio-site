@@ -85,9 +85,10 @@ const Portfolio: React.FC<PortfolioProps> = ({ darkMode, toggleDarkMode }) => {
             learning or required for scale.
           </p>
           <p>
-            Outside of coding, I nerd out about health and nutrition. You can
-            often find me at the skatepark, gym, or trying to push myself to
-            last 5 more minutes in the sauna.
+            Outside of coding, i'm into health and nutrition. You can often find
+            me at the skatepark, gym, or trying to push myself to last 5 more
+            minutes in the sauna. I'm also a mediocre chess player and
+            enthusiast.
           </p>
         </section>
 
