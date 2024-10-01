@@ -1,92 +1,24 @@
 import React from "react";
 import StyledLink from "../components/StyledLink";
 import Footer from "../components/Footer";
+import DarkModeToggle from "../components/DarkModeToggle";
 
-interface ThemeToggleProps {
-  darkMode: boolean;
-  toggleDarkMode: () => void;
-}
-
-const ThemeToggle: React.FC<ThemeToggleProps> = ({
-  darkMode,
-  toggleDarkMode,
-}) => {
-  return (
-    <button
-      onClick={toggleDarkMode}
-      className="focus:outline-none focus:ring-0"
-      aria-label="Toggle Dark Mode"
-    >
-      {darkMode ? (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="h-6 w-6 text-yellow-500"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            d="M12 3v2m0 14v2m9-9h-2M5 12H3m15.364-6.364l-1.414 1.414M6.05 17.95l-1.414 1.414M17.95 17.95l-1.414-1.414M6.05 6.05L4.636 7.464"
-          />
-        </svg>
-      ) : (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="h-6 w-6 text-gray-800 dark:text-gray-200"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            d="M21 12.79A9 9 0 1111.21 3a7 7 0 009.79 9.79z"
-          />
-        </svg>
-      )}
-    </button>
-  );
-};
-
-// Portfolio Component with proper typing
-interface PortfolioProps {
-  darkMode: boolean;
-  toggleDarkMode: () => void;
-}
-
-const Portfolio: React.FC<PortfolioProps> = ({ darkMode, toggleDarkMode }) => {
+const Portfolio: React.FC = () => {
   return (
     <div className="max-w-3xl mx-auto pb-8 pt-16 px-4 sm:px-6 lg:px-8">
       <div className="flex justify-between items-center mb-6">
         <h1 className="text-2xl font-semibold text-zinc-900 dark:text-zinc-100">
           Mike Jonas
         </h1>
-        <ThemeToggle darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+        <DarkModeToggle />
       </div>
 
       <main className="group text-zinc-700 dark:text-zinc-300">
         <section className="mb-8">
+          <p>Builder, creator, coder</p>
           <p>
-            Full stack engineer. I can build products and apps independently,
-            but prefer working with talented teams.
-          </p>
-          <p>
-            Driven by building refined products, working on exciting missions,
-            and being on the cutting edge.
-          </p>
-          <p>
-            I always avoid complexity and aim to reduce it unless it's for
-            learning or required for scale.
-          </p>
-          <p>
-            Outside of coding, I'm into health and nutrition. You can often find
-            me at the skatepark, gym, or trying to push myself to last 5 more
-            minutes in the sauna. I'm also always for a challenge when it comes
-            to chess or Catan.
+            Solving problems, learning, working on exciting missions, creating
+            refined produts, and staying on the cutting edge
           </p>
         </section>
 
@@ -112,12 +44,12 @@ const Portfolio: React.FC<PortfolioProps> = ({ darkMode, toggleDarkMode }) => {
                 trustless and efficient exchange operations. At its peak, the
                 protocol processed $80,000,000 in daily trading volume, reducing
                 fees, tightening spreads, and enabling anyone to easily market
-                make.
+                make
               </p>
               <p>
                 Sadly, as we scaled, the team grew apart, leading to the
                 product's eventual failure. However, our innovations live on,
-                inspiring a new class of related products.
+                inspiring a new class of related products
               </p>
             </div>
 
@@ -131,7 +63,7 @@ const Portfolio: React.FC<PortfolioProps> = ({ darkMode, toggleDarkMode }) => {
                 Senior engineer working on core product and founding the growth
                 team. Developed tooling for company-wide experiment creation,
                 management, and analysis. Built and measured various product
-                experiments, gaining insights into effective strategies.
+                experiments, gaining insights into effective strategies
               </p>
               <p>
                 Ahead of its time, I also developed initial versions of native
@@ -140,7 +72,7 @@ const Portfolio: React.FC<PortfolioProps> = ({ darkMode, toggleDarkMode }) => {
                 the company's plans to primarily be a platform that integrates
                 with others. Now, several years later, core product experiences
                 are the primary focus, with video, Discord-like community, and
-                explore taking center stage.
+                explore taking center stage
               </p>
             </div>
           </div>
@@ -166,7 +98,7 @@ const Portfolio: React.FC<PortfolioProps> = ({ darkMode, toggleDarkMode }) => {
                 extremely accurate astrological data to provide personalized
                 insights and predictions. Built with React Native for
                 cross-platform mobile support, Node.js for the backend, Python
-                for using certain libries, and Postgres for data storage.
+                for using certain libries, and Postgres for data storage
               </p>
             </div>
 
@@ -184,7 +116,7 @@ const Portfolio: React.FC<PortfolioProps> = ({ darkMode, toggleDarkMode }) => {
                 can engage in conversations with unique AI characters, each with
                 its own personality. Developed using Swift for the frontend,
                 with Node.js powering the backend and Postgres managing the
-                database.
+                database
               </p>
             </div>
 
