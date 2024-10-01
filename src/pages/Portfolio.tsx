@@ -61,7 +61,6 @@ interface PortfolioProps {
 const Portfolio: React.FC<PortfolioProps> = ({ darkMode, toggleDarkMode }) => {
   return (
     <div className="max-w-3xl mx-auto pb-12 pt-16 px-4 sm:px-6 lg:px-8">
-      {/* Header section with name and theme toggle */}
       <div className="flex justify-between items-center mb-6">
         <h1 className="text-2xl font-semibold text-zinc-900 dark:text-zinc-100">
           Mike Jonas
@@ -70,7 +69,6 @@ const Portfolio: React.FC<PortfolioProps> = ({ darkMode, toggleDarkMode }) => {
       </div>
 
       <main className="group text-zinc-700 dark:text-zinc-300">
-        {/* Introduction Section */}
         <section className="mb-8">
           <p>
             Full stack engineer. I can build products and apps independently,
@@ -85,7 +83,7 @@ const Portfolio: React.FC<PortfolioProps> = ({ darkMode, toggleDarkMode }) => {
             learning or required for scale.
           </p>
           <p>
-            Outside of coding, i'm into health and nutrition. You can often find
+            Outside of coding, I'm into health and nutrition. You can often find
             me at the skatepark, gym, or trying to push myself to last 5 more
             minutes in the sauna. I'm also a mediocre chess player and
             enthusiast.
@@ -94,7 +92,6 @@ const Portfolio: React.FC<PortfolioProps> = ({ darkMode, toggleDarkMode }) => {
 
         <hr className="border-t border-zinc-200 dark:border-zinc-700 my-8" />
 
-        {/* Recent Work Section */}
         <section className="mb-8">
           <p className="text-xl font-semibold mb-4">Recent Work</p>
 
@@ -110,17 +107,17 @@ const Portfolio: React.FC<PortfolioProps> = ({ darkMode, toggleDarkMode }) => {
                 <StyledLink external to="https://ribbitcap.com/our-bets/">
                   Ribbit Capital
                 </StyledLink>
-                , among others. We built the most capital-efficient and open
-                trading platform, engineering new financial primitives for
+                , and others. We aimedto build the most capital-efficient and
+                open trading platform, engineering new financial primitives for
                 trustless and efficient exchange operations. At its peak, the
                 protocol processed $80,000,000 in daily trading volume, reducing
                 fees, tightening spreads, and enabling anyone to easily market
                 make.
               </p>
               <p>
-                Sadly, the team grew apart as we scaled, leading to eventual
-                product failure, but our innovations live on and have inspired a
-                class of other related products.
+                Sadly, as we scaled, the team grew apart, leading to the
+                product's eventual failure. However, our innovations live on,
+                inspiring a new class of related products.
               </p>
             </div>
 
@@ -166,10 +163,10 @@ const Portfolio: React.FC<PortfolioProps> = ({ darkMode, toggleDarkMode }) => {
               </p>
               <p className="mt-2">
                 Perplexity for personal astrology. This app combines AI and
-                astrological data to provide personalized insights and
-                predictions. Built with React Native for cross-platform mobile
-                support, Node.js for the backend, Python for data processing,
-                and Postgres for data storage.
+                extremely accurate astrological data to provide personalized
+                insights and predictions. Built with React Native for
+                cross-platform mobile support, Node.js for the backend, Python
+                for using certain libries, and Postgres for data storage.
               </p>
             </div>
 
@@ -183,11 +180,11 @@ const Portfolio: React.FC<PortfolioProps> = ({ darkMode, toggleDarkMode }) => {
                 </StyledLink>
               </p>
               <p className="mt-2">
-                An innovative voice chat application featuring novel AI
-                personas. This iOS app allows users to engage in conversations
-                with unique AI characters, each with its own personality and
-                knowledge base. Developed using Swift for the frontend, with
-                Node.js powering the backend and Postgres managing the database.
+                A voice chat application featuring novel AI personas where users
+                can engage in conversations with unique AI characters, each with
+                its own personality. Developed using Swift for the frontend,
+                with Node.js powering the backend and Postgres managing the
+                database.
               </p>
             </div>
 
@@ -201,12 +198,13 @@ const Portfolio: React.FC<PortfolioProps> = ({ darkMode, toggleDarkMode }) => {
                 </StyledLink>
               </p>
               <p className="mt-2">
-                A tool to summarize and query YouTube videos. This web
-                application extracts key information from videos, allowing users
-                to quickly grasp content without watching the entire video.
-                Users can also ask questions about the video content. Built with
-                React and Remix for a smooth user experience, backed by Postgres
-                for efficient data management.
+                A tool to summarize and query YouTube videos. The application
+                extracts key information, like transcript and summaries from
+                videos, allowing users to quickly grasp content without watching
+                the entire video. Users can also ask questions about the video
+                content. Built with React and Remix for a smooth user
+                experience, backed by Postgres for efficient data management.
+                I'm currently Refactoring it to be a chrome extension
               </p>
             </div>
           </div>
