@@ -1,7 +1,7 @@
 import React from "react";
 import StyledLink from "../components/StyledLink";
 import Footer from "../components/Footer";
-// ThemeToggle Component with proper typing
+
 interface ThemeToggleProps {
   darkMode: boolean;
   toggleDarkMode: () => void;
@@ -60,7 +60,7 @@ interface PortfolioProps {
 
 const Portfolio: React.FC<PortfolioProps> = ({ darkMode, toggleDarkMode }) => {
   return (
-    <div className="max-w-3xl mx-auto pb-12 pt-16 px-4 sm:px-6 lg:px-8">
+    <div className="max-w-3xl mx-auto pb-8 pt-16 px-4 sm:px-6 lg:px-8">
       <div className="flex justify-between items-center mb-6">
         <h1 className="text-2xl font-semibold text-zinc-900 dark:text-zinc-100">
           Mike Jonas
@@ -75,8 +75,8 @@ const Portfolio: React.FC<PortfolioProps> = ({ darkMode, toggleDarkMode }) => {
             but prefer working with talented teams.
           </p>
           <p>
-            Building refined products, working on exciting missions, and being
-            on the cutting edge drives me.
+            Driven by building refined products, working on exciting missions,
+            and being on the cutting edge.
           </p>
           <p>
             I always avoid complexity and aim to reduce it unless it's for
@@ -85,8 +85,8 @@ const Portfolio: React.FC<PortfolioProps> = ({ darkMode, toggleDarkMode }) => {
           <p>
             Outside of coding, I'm into health and nutrition. You can often find
             me at the skatepark, gym, or trying to push myself to last 5 more
-            minutes in the sauna. I'm also a mediocre chess player and
-            enthusiast.
+            minutes in the sauna. I'm also always for a challenge when it comes
+            to chess or Catan.
           </p>
         </section>
 
